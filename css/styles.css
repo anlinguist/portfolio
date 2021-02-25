@@ -178,8 +178,11 @@ main {
 #formmsg {
     min-height: 60px;
 }
+#submitdiv {
+    text-align: right;
+    display: block;
+}
 #submit {
-    float: right;
     padding: 10px;
     background-color: white;
     border: 1px solid #34495E;
