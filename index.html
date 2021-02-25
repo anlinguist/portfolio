@@ -1,6 +1,66 @@
 <!DOCTYPE html>
 <html>
-<head><meta http-equiv="refresh" content="0; url=https://anlinguist.com/pages/index.html"></head>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+        <link href='css/styles.css' rel='stylesheet'>
+    </head>
 
-<body></body>
+    <body>
+        <header id="header">
+            <div id="header-left">
+                <img id="self-photo" src="assets/andrew.jpeg">
+                <div id="namearea">
+                    <h1 id="site-title">Andrew Nelson</h1>
+                    <h3 id="sub-title">NLP Engineer and Product Manager</h3>
+                </div>
+            </div>
+            <!-- <div id="header-right">
+                <a class="header-items" href="#about">About</a>
+                <a class="header-items" href="#portfolio">Portfolio</a>
+                <a class="header-items" href="#contact">Contact</a>
+            </div> -->
+            <!-- <div id="compact-nav">
+
+            </div> -->
+        </header>
+        <main id="main">
+            <div id="about">
+                <h2 id="about-me" class="section-titles">About Me</h2>
+                <p>I love building tools that solve problems related to linguistics and natural language processing. Currently I work on the Product Team at <a class="linkonpage" target="_blank" href="https://www.taprecruit.co">TapRecruit</a> where we help other companies write fair and inclusive job descriptions.</p>
+                <p>I enjoy both frontend and backend development. I've built apps, chrome extensions, websites, and wordpress themes and I enjoy using my knowledge of Linguistics and NLP libraries to process and make sense of language data. I'm competent in a number of tools including Java, Python, JavaScript, HTML/CSS, Perl, C++, PHP, and Firebase.</p>
+            </div>
+            <div id="portfolio">
+                <h2 class="section-titles">My Portfolio</h2>
+                <p>Here are some of the things I've built:</p>
+                <ul>
+                    <li><a class="linkonpage" target="_blank" href="https://www.getreadefine.com"><b>Read</b>efine</a></li>
+                    <p><b>Read</b>efine is a browser extension (built in JavaScript, HTML, CSS) that simplifies language across the internet. I designed and built all aspects of <b>Read</b>efine including the client extension, the database, the <b>Read</b>efine server, and the <a class="linkonpage" href="https://www.getreadefine.com" target="_blank">landing page</a>.</p>
+                    <p>Check out a demo here:</p>
+                    <div style="position: relative; padding-bottom: 62.5%; height: 0; z-index: 0;"><iframe src="https://www.loom.com/embed/34d1dfae9b204a598071443206785c63" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="border-radius: 6px; position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+                    <p></p>
+                    <li><a class="linkonpage" target="_blank" href="https://anlinguist.github.io/Numu-Know/pages/index.html">Numu-Know</a> (<a class="linkonpage" href="https://github.com/anlinguist/Numu-Know" target="_blank">source</a>)</li>
+                    <p>Numu-Know is a responsive web app that renders a database of Paiute (a Native American language) texts. Numu-Know allows anyone to see community documents and, when signed in, create and manage their own documents. Numu-Know is designed to help Paiute learners quickly access additional information about a word by clicking on the word, which shows word attributes such as part of speech or gloss.</p>
+                    <li><a class="linkonpage" target="_blank" href="https://desolate-castle-10591.herokuapp.com/">Language Explorer</a> (<a class="linkonpage" href="https://github.com/anlinguist/languageExplorer" target="_blank">source</a>)</li>
+                    <p>Language Explorer is a Streamlit (which is a Python visualizer similar to Plotly's Dash) app deployed on Heroku that allows you to create and view texts with attributes. It comes preloaded with the Greek New Testament, which contains tag, lemma, and gloss attributes. These attributes can be viewed by hovering over a word.</p>
+                    <li><a class="linkonpage" target="_blank" href="https://anlinguist.github.io/nlp-calculator/pages/index.html">NLP Calculator</a> (<a class="linkonpage" href="https://github.com/anlinguist/nlp-calculator" target="_blank">source</a>)</li>
+                    <p>NLP Calculator is a calculator web app that allows you to make natural language math calculations such as "What is 17 times 45 + 30 - 6 to the power of three?" NLP Calculator parses the question and calculates the answer (using the standard order of operations).</p>
+                </ul>
+                
+            </div>
+            <div id="contact">
+                <h2 class="section-titles">Contact Me</h2>
+                <p>Feel free to reach out anytime, I love taking on new side projects! Just fill out this form:</p>
+                <form id="contactform">
+                    <div contenteditable="true" class="formitem" id="formname" data-placeholder="Name"></div>
+                    <div contenteditable="true" class="formitem" id="formemail" data-placeholder="Email"></div>
+                    <div contenteditable="true" id="formmsg" id="formmsg" class="formitem" data-placeholder="Message"></div>
+                </form>
+                <div id="submitdiv"><button id="submit" disabled>Submit</button></div>
+            </div>
+
+        </main>
+        <footer></footer>
+        <script src="js/script.js"></script>
+    </body>
 </html>
