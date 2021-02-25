@@ -9,11 +9,13 @@ function scrollFunction() {
     { 
         document.getElementById("header") 
                     .style.padding = "25px 10px"; 
+        document.getElementById("site-title") 
+                    .style.textAlign = "left";
         if (sw > 500) {
             document.getElementById("site-title") 
-                        .style.fontSize = "2vw";
+                        .style.fontSize = "20px";
             document.getElementById("sub-title")
-                        .style.fontSize = "1vw"
+                        .style.fontSize = "16px"
         }
         else {
             document.getElementById("site-title") 
@@ -48,11 +50,13 @@ function scrollFunction() {
                     .style.height = "200px";
         document.getElementById("main")
                     .style.marginTop = "390px"
+        document.getElementById("site-title") 
+                    .style.textAlign = "center";
         if (sw > 500) {
             document.getElementById("site-title") 
-                        .style.fontSize = "4vw";
+                        .style.fontSize = "30px";
             document.getElementById("sub-title")
-                        .style.fontSize = "2vw"
+                        .style.fontSize = "22px"
         }
         else {
             document.getElementById("site-title") 
