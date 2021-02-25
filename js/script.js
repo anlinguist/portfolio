@@ -8,7 +8,7 @@ function scrollFunction() {
         document.documentElement.scrollTop > 0) 
     { 
         document.getElementById("header") 
-                    .style.padding = "25px 10px"; 
+                    .style.padding = "0px 10px"; 
         document.getElementById("site-title") 
                     .style.textAlign = "left";
         if (sw > 500) {
@@ -30,13 +30,13 @@ function scrollFunction() {
         document.getElementById("self-photo") 
                     .style.height = "100px";
         document.getElementById("main")
-                    .style.marginTop = "180px"
+                    .style.marginTop = "130px"
         document.getElementById("header-left")
                     .style.left = "0"
         document.getElementById("header-left")
                     .style.transform = "translate(0%, -50%)"
         document.getElementById("header")
-                    .style.height = "180px"
+                    .style.height = "130px"
     }  
     else { 
         document.getElementById("header") 
