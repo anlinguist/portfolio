@@ -205,3 +205,12 @@ main {
     background-color: white;
     color: #34495E;
   }
+
+  @media screen and (max-width: 500px) {
+    #site-title {   
+      font-size: 8vw;
+    }
+    #sub-title {
+        font-size: 4vw;
+    }
+  }
