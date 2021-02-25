@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     color: white;
     z-index: 1;
+    height: 380px;
 }
 #header {
     transition: 0.4s; 
@@ -34,13 +35,11 @@ main {
     color: #34495E;
 }
 #self-photo {
-    float: left;
     height: 200px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: auto;
     margin-bottom: auto;
-    display: block;
     border-radius: 50%;
     transition: 0.4s;
 }
@@ -48,28 +47,37 @@ main {
     margin-top: auto;
     margin-bottom: auto;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
 }
 #site-title {
     margin-top: auto;
     margin-bottom: auto;
     display: block;
-    font-size: 50px; 
+    font-size: 4vw; 
     font-weight: bold; 
     transition: 0.4s; 
-    text-align: left;
+    text-align: center;
 }
 #sub-title {
-    font-size: 24px;
+    font-size: 2vw;
     transition: 0.4s;
 }
 .header-items {
     transition: 0.4s;
 }
 #header-left {
-    display: flex;
     white-space: nowrap;
-    margin-left: calc(50vw - 315px);
-    transition: 0.4s;
+    transition: 0.4s;    
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 #header-right {
     margin-left: 25px;

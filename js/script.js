@@ -3,14 +3,24 @@ window.onscroll = function() {
 }; 
   
 function scrollFunction() { 
+    sw = document.body.clientWidth
     if (document.body.scrollTop > 0 || 
         document.documentElement.scrollTop > 0) 
     { 
         document.getElementById("header") 
                     .style.padding = "25px 10px"; 
-          
-        document.getElementById("site-title") 
-                    .style.fontSize = "40px";
+        if (sw > 500) {
+            document.getElementById("site-title") 
+                        .style.fontSize = "2vw";
+            document.getElementById("sub-title")
+                        .style.fontSize = "1vw"
+        }
+        else {
+            document.getElementById("site-title") 
+                        .style.fontSize = "6vw";
+            document.getElementById("sub-title")
+                        .style.fontSize = "3vw"
+        }
         var all = document.getElementsByClassName('header-items');
         for (var i = 0; i < all.length; i++) {
             all[i].style.fontSize = '14px';
@@ -19,19 +29,17 @@ function scrollFunction() {
                     .style.height = "100px";
         document.getElementById("main")
                     .style.marginTop = "180px"
-        document.getElementById("sub-title")
-                    .style.fontSize = "18px"
-        // document.getElementById("header-left")
-        //             .style.flexDirection = "row"
         document.getElementById("header-left")
-                    .style.marginLeft = "0"
+                    .style.left = "0"
+        document.getElementById("header-left")
+                    .style.transform = "translate(0%, -50%)"
+        document.getElementById("header")
+                    .style.height = "180px"
     }  
     else { 
         document.getElementById("header") 
                     .style.padding = "90px 10px"; 
                       
-        document.getElementById("site-title") 
-                    .style.fontSize = "50px";
         var all = document.getElementsByClassName('header-items');
         for (var i = 0; i < all.length; i++) {
             all[i].style.fontSize = '20px';
@@ -40,12 +48,26 @@ function scrollFunction() {
                     .style.height = "200px";
         document.getElementById("main")
                     .style.marginTop = "390px"
-        document.getElementById("sub-title")
-                    .style.fontSize = "24px"
+        if (sw > 500) {
+            document.getElementById("site-title") 
+                        .style.fontSize = "4vw";
+            document.getElementById("sub-title")
+                        .style.fontSize = "2vw"
+        }
+        else {
+            document.getElementById("site-title") 
+                        .style.fontSize = "8vw";
+            document.getElementById("sub-title")
+                        .style.fontSize = "4vw"
+        }
         // document.getElementById("header-left")
         //             .style.flexDirection = "column"
         document.getElementById("header-left")
-                    .style.marginLeft = "calc(50vw - 315px)"
+                    .style.left = "50%"  
+        document.getElementById("header-left")
+                    .style.transform = "translate(-50%, -50%)"
+        document.getElementById("header")
+                    .style.height = "380px"
                     
     } 
 }
