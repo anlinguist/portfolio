@@ -41,7 +41,7 @@ main {
     margin-top: auto;
     margin-bottom: auto;
     border-radius: 50%;
-    transition: 0.4s;
+    /* transition: 0.4s; */
 }
 #namearea {
     margin-top: auto;
@@ -57,19 +57,19 @@ main {
     display: block;
     font-size: 4vw; 
     font-weight: bold; 
-    transition: 0.4s; 
+    /* transition: 0.4s;  */
     text-align: center;
 }
 #sub-title {
     font-size: 2vw;
-    transition: 0.4s;
+    /* transition: 0.4s; */
 }
 .header-items {
     transition: 0.4s;
 }
 #header-left {
     white-space: nowrap;
-    transition: 0.4s;    
+    /* transition: 0.4s;     */
     position: absolute;
     display: flex;
     flex-direction: row;
